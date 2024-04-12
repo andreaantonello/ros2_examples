@@ -7,7 +7,7 @@ class CrabPublisher : public rclcpp::Node {
 public:
     CrabPublisher() : Node("crab_publisher") {
         publisher_ = this->create_publisher<custom_crab_interfaces::msg::RobotTelemetry>("crab_publisher", 10);
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(7), 
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(20), 
                 std::bind(&CrabPublisher::publishMessage, this));
         RCLCPP_INFO(this->get_logger(), "Crab Publisher has started");
     }
