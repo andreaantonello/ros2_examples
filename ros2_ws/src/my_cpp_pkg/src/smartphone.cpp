@@ -4,7 +4,7 @@
 class SmartphoneNode: public rclcpp::Node {
 
 public:
-    SmartphoneNode(): Node("Smartphone") {
+    SmartphoneNode(): Node("smartphone") {
         subscriber_ = this->create_subscription<example_interfaces::msg::String>("robot_news", 10,
         std::bind(&SmartphoneNode::callbackRobotNews, this, std::placeholders::_1));
         RCLCPP_INFO(this->get_logger(), "Smartphone subscriber has started");
