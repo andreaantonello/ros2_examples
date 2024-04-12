@@ -14,15 +14,13 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='parallels',
-    maintainer_email='parallels@todo.todo',
+    maintainer_email='andrea.antonello.it@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "py_node = my_py_pkg.my_first_node:main",
-            "smartphone = my_py_pkg.smartphone:main",
-            "robot_news_station = my_py_pkg.robot_news_station:main"
+            "py_node = my_py_pkg.my_first_node:main"
         ],
     },
 )

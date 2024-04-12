@@ -1,0 +1,21 @@
+# Ignore ROS2 workspace install and log directories
+**/install/
+**/log/
+**/test/
+
+# Ignore VSCode configuration files
+**/.vscode/
+
+# Ignore compiled binaries and logs
+*.log
+*.pyc
+
+# Ignore build artifacts
+**/build/
+
+# Ignore Python cache and bytecode files
+__pycache__/
+*.pyc
+
+# Ignore any files ending with .swp
+*.swp
