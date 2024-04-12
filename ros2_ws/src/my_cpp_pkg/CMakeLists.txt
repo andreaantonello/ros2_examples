@@ -9,7 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
-find_package(example_interfaces REQUIRED)
+find_package(custom_crab_interfaces REQUIRED)
 
 add_executable(cpp_node src/my_first_node.cpp)
 ament_target_dependencies(cpp_node rclcpp)
@@ -21,7 +21,7 @@ add_executable(smartphone src/smartphone.cpp)
 ament_target_dependencies(smartphone rclcpp example_interfaces)
 
 add_executable(crab_publisher src/crab_publisher.cpp)
-ament_target_dependencies(crab_publisher rclcpp example_interfaces)
+ament_target_dependencies(crab_publisher rclcpp example_interfaces custom_crab_interfaces)
 
 install(TARGETS
   cpp_node

@@ -1,0 +1,6 @@
+int32 joint_number
+float32 input_encoder_radians
+float32 output_encoder_radians
+float32 input_velocity
+float32 output_velocity
+float32 joint_current
